@@ -31,22 +31,49 @@ Learn how to create a website both front-end and back-end. Create a webpage with
 
 Takeaways : Learn to create a website so that its easier to create a webserver.
 
-## Task 4 - ESP32 Cam 
+## Task 4 -  ESP32 CAM Based Surveillance Robot using Arduino IDE
+Specific and customised task description * (Very important) - Use an ESP32 cam implementing L298N control for movement, setting up a live video streaming server, and enabling remote control functionality through Wi-Fi. Upload the video captured by the esp32cam on the MARVEL website 
+(Specific part is instead of the motor driver  in the website they have to use L298N motor driver hence circuit will change and even the code a little bit)
 
-Set up  a CCTV camera system that streams/records video footages as a measure to heighten the lab security.
+Resource link :
 
-[Resource](https://randomnerdtutorials.com/esp32-cam-video-streaming-face-recognition-arduino-ide/)
+https://iotdesignpro.com/projects/esp32-cam-surveillance-robot-car
 
-Takeaways : Learn to use the esp32cam. 
+Expected task outcomes*- The goal is to create a versatile surveillance robot capable of capturing and transmitting live video feed while being remotely controllable for surveillance applications.
 
 
-##  Task 5 - Control ESP32 Cam from Node-Red using MQTT protocol
+Precautions/Safety measures/process for completing task- NILL
 
-Capture an image from the esp32 cam using Node-Red on the PC. Send the image back to the Node-Red interface.
 
-[Resource](https://www.youtube.com/watch?v=L_rqYK_QUCg)
 
-Takeaways : Learn how to practically use MQTT protocol for publishing and subscribing data.
+
+
+##  Task 5 - MQTT PUBLISH AND SUBSCRIBE USING CLOUD MQTT
+
+
+Specific and customised task description * (Very important) - Utilise MQTT LENS or any mqtt platform to establish MQTT publishing and subscribing functionalities. Upon publishing a message to turn on the 3 LED, ensure that subscribers receive the message and activate the particular led at a certain time LED accordingly.
+Ex.LED 1 ON - Should on the first led only
+SIMILARLY FOR LED 2 AND FOR 3
+ 
+LED 1 OFF - Should off the first led only
+SIMILARLY FOR LED 2 AND FOR 3
+ 
+specifications- the resource is for one led on and off I gave it for 3 leds
+
+
+Takeaways : Learn about the different protocols used in IOT.
+Resource Links* - 
+
+https://m.youtube.com/watch?v=deIRY5NxXo4
+
+
+
+
+
+Expected task outcomes*- Upon successfully implementing MQTT publishing and subscribing using MQTT-LENS or any MQTT PUBLISHER, the LED will turn on and off when a particular message is published, demonstrating seamless communication and control over the LED device Using MQTT.
+
+Precautions/Safety measures/process for completing task- NILL
+
 
 
 ##  Task 6 - Sending data to ThingSpeak
@@ -101,6 +128,16 @@ Resources:
 1. [MAX30100 with OLED](https://www.instructables.com/Heart-Rate-and-Blood-Oxygen-Level-With-Arduino-IDE/)
 2. [MIT App Inventor using WebServer](https://community.appinventor.mit.edu/t/esp32-sends-data-to-the-app-over-wifi-in-realtime-javascript-ajax/46307)
 3. [MQTT using MIT App Inventor and ESP32](https://www.youtube.com/watch?v=WAimZhU5phs)
+
+## Task 11 - FIRE ALARM SYSTEM WITH EMAIL ALERTS
+Develop a fire alarm system using ESP32 microcontroller equipped with fire sensors. Upon detecting fire, the ESP32 triggers an email alert through Wi-Fi, notifying designated recipients about the potential fire hazard for timely response and action.
+*IMPORTANT* -This task needs to be tested only in the presence of a coordinator outside the lab (in an open area) to ensure the safety of the lab.
+
+ RESOURCE : https://randomnerdtutorials.com/esp32-email-alert-temperature-threshold/
+ 
+TASK OUTCOME: sending emails using esp32- the resource provides guidance on sending emails using esp32. Changes have to be done to the hardware connections and the code so as to include the fire sensor.
+ 
+PRECAUTIONS/SAFETY MEASURES- to ensure that the testing of this circuit is done only in the presence of a coordinator outside the lab (in an open area ) to ensure the safety of the lab.
 
 
 
