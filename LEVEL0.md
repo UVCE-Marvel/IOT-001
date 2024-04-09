@@ -98,11 +98,16 @@ Refer to the linked article for further details
 
 ## TASK 9: Tinkercad
 
-Create a tinkercad account, get familiar with the application, understand the example circuits
-given and simulate the following using ultrasonic/infrared sensors, estimate the distance
-between an obstacle and the sensor. Display the results on a LCD screen.
+Create a tinkercad account, get familiar with the application, understand the example circuits given and simulate a simple circuit using an ultrasonic sensor to estimate the distance between an obstacle and the sensor. Display the results on the serial monitor.
+ 
+Create a radar system utilising an ultrasonic sensor and servo motor to detect objects within a certain range. The ultrasonic sensor emits sound waves and measures the time taken for them to bounce back, while the servo motor rotates the sensor to cover a wider area, providing a simple yet effective detection mechanism.
+ RESOURCE: https://youtu.be/NwmcNCvUcDc?si=x2LAYMFiqs1SzLfI
+ TASK OUTCOME: introduction to-
+·        TINKERCAD
+·        Working of ultrasonic sensor and servo motor
+·        Radar technology
+PRECAUTIONS/SAFETY MEASURES- NOT ANY
 
-[Resource Article](https://www.geeksforgeeks.org/distance-measurement-using-ultrasonic-sensor-and-arduino/)
  
 ## TASK 10: Speed Control of DC Motor
 
@@ -158,3 +163,6 @@ Take part in any technical event, inter or intra college and submit the issued c
 participation.
 
 Enroll for a MOOC and complete the course.
+## TASK 16: Datasheets report writing:
+Topics: 1)MQ135 Gas sensor 2)L293D motor driver
+Task Description: Study the datasheet of any one of the above and write a report on it. Specify about the ICs used in L293D, PWM, H-bridge etc. In case of MQ 135, specify the calibrations for different gases and the Freundlich Absorption Theorem Graph.
