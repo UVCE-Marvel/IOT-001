@@ -27,11 +27,13 @@ Use RFID cards to log in attendance and display the attendance with time on goog
 
 [Resource](https://randomnerdtutorials.com/esp32-esp8266-publish-sensor-readings-to-google-sheets/)
 
-##  Task 5 - Communication using Zigbee protocol 
+ ## Task 5- INTRODUCTION TO LoRa
 
-Establish a communication between Arduino and ESP32 using zigbee protocols and transfer data from a sensor from one device to the other.
+LoRa technology enables low-power, wide-area networking, facilitating efficient and reliable exchange of data between devices over considerable distances, making it ideal for various IoT and remote monitoring applications.
 
-[Resource](https://www.instructables.com/Setting-Up-Zigbee-Communication-to-Transfer-Data-B/)
+Establish communication between two microcontrollers (esp32) using the LoRa protocol. Build a simple LoRa sender and LoRa receiver and send a simple message from the sender to receiver.
+
+RESOURCE: https://randomnerdtutorials.com/esp32-lora-rfm95-transceiver-arduino-ide/
 
 
 ##   Task 6 - Controlling multiple peripherals using SPI Protocol
@@ -53,3 +55,32 @@ Create a Telegram bot to turn on a motor in both the directions. Use ESP32 as th
 By sending voice commands to Alexa turn off or turn on an LED bulb. Use ESP32 for the task
 
 [Resource](https://randomnerdtutorials.com/alexa-echo-with-esp32-and-esp8266/)
+
+## Task 9- Smart Density Based Traffic Light Control System with ESP32 & Blynk
+
+Create a Smart Density-Based Traffic Light Control System using ESP32 and Blynk. This involves integrating ultrasonic sensors to measure traffic density, programming the ESP32 microcontroller to analyze sensor data, implementing dynamic traffic light control logic, setting up communication with the Blynk IoT platform for remote monitoring and control, and deploying the system at traffic junctions to optimize traffic flow based on real-time traffic conditions.
+
+Specific -  Make a traffic system for 3 sides of the junction and implement a buzzer when one of the red light in the system turns to green 
+
+Resource: https://how2electronics.com/density-based-traffic-light-controller-with-esp32-blynk
+
+The objective is to design an efficient and adaptable traffic management solution using IoT technology and cloud-based control interfaces.Hence all the lights should change on the basis of density and then the buzzer should buzz when any one of the light is going to turn red.
+
+## Task 10-INTRUSION DETECTION-
+
+Create an intrusion detection system utilising a PIR (Passive Infrared) sensor and ESP32-CAM module. When motion is detected, ESP32-CAM has to capture images and send alerts via the Blynk IoT app, allowing users to monitor and respond to potential intrusions in real-time. 
+
+RESOURCE: https://www.electronicwings.com/esp32/pir-sensor-interfacing-with-esp32
+
+ https://youtu.be/LqX9EMFSoDA?si=izzbBG8MLH06h4m4
+ 
+TASK OUTCOME: introduction to-
+
+·        PIR sensor
+
+·        BLYNK IoT app
+
+·       using esp32 cam in HOME AUTOMATION
+
+
+
