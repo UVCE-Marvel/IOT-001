@@ -179,3 +179,13 @@ Determine your batch with the coordinator and attend an introductory offline ses
 
 ![GR](https://gist.github.com/user-attachments/assets/87fc73e7-478a-4854-9ab4-123cd02be94e)
 
+## TASK 19: Sad servers - "Like LeetCode for Linux"
+Sadservers is an excellent ground to test your Linux troubleshooting skills.  Here is a troubleshooting scenario: Command Line Murders. Troubleshoot and Make Sad Servers Happy!  
+
+[Command line murder](https://sadservers.com/scenario/command-line-murders )  
+[Linux commands]( https://www.hostinger.com/tutorials/linux-commands )    
+     		      [Linux commands]( https://github.com/vvvvvvss/learnLinux )   
+
+## Task 20: Make a Web app
+Using express create a resource library website where you can browse the resource articles, books etc which are available and also manage your account  
+[Reference](https://developer.mozilla.org/en-US/docs/Learn/Server-side/Express_Nodejs)
