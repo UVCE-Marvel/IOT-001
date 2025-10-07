@@ -1,7 +1,6 @@
 
 # **Level 1 – Introduction to ESP32 & Basic Components**
 
----
 
 ## **Task 1a – Theory: Digital I/O & Interrupts**
 
@@ -14,7 +13,7 @@ Students will explore how interrupts optimize system responsiveness for button p
 
 **Resource:** [Pinout of ESP32](https://randomnerdtutorials.com/esp32-pinout-reference-gpios/)
 
----
+
 
 ## **Task 1b – Simon Says Game using ESP32**
 
@@ -28,7 +27,7 @@ If the user fails, provide a clear indication (e.g., all LEDs flashing) and rest
 
 **Resource:** Modify the existing [Wokwi Simulation](https://wokwi.com/) for ESP32 compatibility.
 
----
+
 
 ## **Task 2 – Temperature-Based Fan Control**
 
@@ -42,11 +41,11 @@ This task integrates sensor data acquisition with actuator control to demonstrat
 
 **Resource:** [Temperature Controlled Fan](https://www.youtube.com/watch?v=WDYNgw0EE6o)
 
----
+
 
 # **Communication Protocols**
 
----
+
 
 ## **Task 3a – IoT Communication Protocols**
 
@@ -61,7 +60,7 @@ Gain theoretical knowledge of common IoT communication protocols (MQTT, CoAP, HT
 * [IoT Communication Protocol](https://www.tutorialspoint.com/cryptography/communication_protocols_for_iot_devices.htm)
 * [Serial Communication Protocol](https://circuitdigest.com/tutorial/serial-communication-protocols)
 
----
+
 
 ## **Task 3b – Controlling LEDs Using MQTT**
 
@@ -89,7 +88,7 @@ Similarly, control **LED 2** and **LED 3**.
 **Takeaway:**
 Understand MQTT communication and apply it to control hardware remotely.
 
----
+
 
 ## **Task 4 – Communication using I2C Protocol**
 
@@ -106,11 +105,11 @@ Learn wired communication between two microcontrollers using the I2C protocol.
 
 **Resource:** [ESP32 I2C Master and Slave](https://randomnerdtutorials.com/esp32-i2c-master-slave-arduino/)
 
----
+
 
 # **Cloud Communication & Data Logging**
 
----
+
 
 ## **Task 5 – Sending Data to ThingSpeak and Creating a Regression Model**
 
@@ -144,11 +143,11 @@ Retrieve the data back from ThingSpeak and create a regression model.
 **Takeaway:**
 Learn to publish and retrieve data from a web server, analyze data, and apply machine learning for prediction.
 
----
+
 
 # **Web Servers & Local Interfaces**
 
----
+
 
 ## **Task 6 – Flashing Morse Code**
 
@@ -164,7 +163,7 @@ Set up an ESP32 to flash Morse code using an LED. The message is sent through a 
 **Takeaway:**
 Understand the application of webservers in communication.
 
----
+
 
 ## **Task 7 – Health Vitals Dashboard**
 
@@ -182,11 +181,11 @@ Measure heart rate and blood oxygen levels using the pulse sensor and display th
 **Takeaway:**
 Learn to monitor health vitals and display data graphically on a webserver.
 
----
+
 
 # **Actuation, Surveillance & Alerts**
 
----
+
 
 ## **Task 8 – Wi-Fi Controlled Surveillance Bot with Live Video Stream**
 
@@ -207,7 +206,7 @@ Build a surveillance robot using an ESP32-CAM and L298N motor driver. Implement 
 **Takeaway:**
 Learn video streaming, remote control, and motor driver interfacing with ESP32.
 
----
+
 
 ## **Task 9 – Fire Alarm System with SMS Alerts**
 
