@@ -1,143 +1,234 @@
-# Level 1
 
-## Task 1 - Simon Says
-Create a simon says game using ESP32, pushbuttons and LEDs. Blink the leds randomly, asking the user to push the corresponding buttons. If the user has failed, then give a clear indication and restart the game.
+# **Level 1 – Introduction to ESP32 & Basic Components**
 
-What is [simon says game](https://www.mathsisfun.com/games/simon-says.html)?
+---
 
-How to make it using ESP32? Follow this wokwi [simulation](https://wokwi.com/projects/328451800839488084) and modify it for ESP32.
+## **Task 1a – Theory: Digital I/O & Interrupts**
 
-Takeaways : Familiarize with the use of the microcontroller esp32 and create a fun game.
+**Objective:**
+Study GPIO configuration and interrupts for efficient input handling.
 
+**Description:**
+Study and comprehend the hardware and software principles behind GPIO pin configuration, including input, output, pull-up/down resistors, and interrupt-driven event handling on the ESP32.
+Students will explore how interrupts optimize system responsiveness for button presses without constant polling.
 
+**Resource:** [Pinout of ESP32](https://randomnerdtutorials.com/esp32-pinout-reference-gpios/)
 
+---
 
+## **Task 1b – Simon Says Game using ESP32**
 
-## Task 2 - Basics of MQTT protocol and other communication protocols
+**Objective:**
+Familiarize with the ESP32 microcontroller by creating an engaging game.
 
-Learn the basics of MQTT protocol and its working from the [website](-https://randomnerdtutorials.com/what-is-mqtt-and-how-it-works/)
+**Description:**
+Create a fun and interactive *Simon Says* game using an ESP32, pushbuttons, and LEDs.
+The game should blink the LEDs in a random sequence, and the user needs to press the corresponding buttons in the correct order.
+If the user fails, provide a clear indication (e.g., all LEDs flashing) and restart the game.
 
-Learn the different types of communication protocols [here](https://www.opc-router.com/what-is-mqtt/)
+**Resource:** Modify the existing [Wokwi Simulation](https://wokwi.com/) for ESP32 compatibility.
 
-Learn about the different networking protocols [here](https://www.techtarget.com/iotagenda/tip/Top-12-most-commonly-used-IoT-protocols-and-standards)
+---
 
-Takeaways : Learn about the different protocols used in IOT. 
+## **Task 2 – Temperature-Based Fan Control**
 
-## Task 3 - Basics of creating a website
+**Objective:**
+Automate fan (DC motor) control using a temperature sensor and relay.
 
-Learn how to create a website both front-end and back-end. Create a webpage with a [button](https://www.w3schools.com/tags/tag_button.asp#:~:text=The%20tag%20defines%20a,with%20the%20element!) that when pressed toggles the color of the webpage.
+**Description:**
+Create an automated temperature regulation system where a DHT11 sensor continuously monitors ambient temperature, displaying readings via the serial monitor.
+When temperature crosses a pre-set threshold, the motor driver will signal the DC motor to turn on at the appropriate speed.
+This task integrates sensor data acquisition with actuator control to demonstrate real-world environmental automation concepts.
 
-[need help?](https://www.w3schools.com/cssref/tryit.asp?filename=trycss_js_background-color)
+**Resource:** [Temperature Controlled Fan](https://www.youtube.com/watch?v=WDYNgw0EE6o)
 
-Takeaways : Learn to create a website so that its easier to create a webserver.
+---
 
-## Task 4 -  ESP32 CAM Based Surveillance Robot using Arduino IDE
-Specific and customised task description * (Very important) - Use an ESP32 cam implementing L298N control for movement, setting up a live video streaming server, and enabling remote control functionality through Wi-Fi. Upload the video captured by the esp32cam on the MARVEL website 
-(Specific part is instead of the motor driver  in the website they have to use L298N motor driver hence circuit will change and even the code a little bit)
+# **Communication Protocols**
 
-Resource link :
+---
 
-https://iotdesignpro.com/projects/esp32-cam-surveillance-robot-car
+## **Task 3a – IoT Communication Protocols**
 
-Expected task outcomes*- The goal is to create a versatile surveillance robot capable of capturing and transmitting live video feed while being remotely controllable for surveillance applications.
+**Objective:**
+Understand IoT and Serial protocols: MQTT, HTTP, I2C, SPI.
 
+**Description:**
+Gain theoretical knowledge of common IoT communication protocols (MQTT, CoAP, HTTP, etc.), understanding their characteristics, trade-offs, and suitable use cases.
 
-Precautions/Safety measures/process for completing task- NILL
+**Resources:**
 
+* [IoT Communication Protocol](https://www.tutorialspoint.com/cryptography/communication_protocols_for_iot_devices.htm)
+* [Serial Communication Protocol](https://circuitdigest.com/tutorial/serial-communication-protocols)
 
+---
 
+## **Task 3b – Controlling LEDs Using MQTT**
 
+**Objective:**
+Utilize any MQTT platform to establish publishing and subscribing functionalities.
 
-##  Task 5 - MQTT PUBLISH AND SUBSCRIBE USING CLOUD MQTT
+**Description:**
+Explore the basics of the MQTT protocol and its working. Learn about different communication and network protocols.
+Upon publishing a message to control LEDs, the subscribers should receive the message and activate the corresponding LED accordingly.
 
+**Example:**
 
-Specific and customised task description * (Very important) - Utilise MQTT LENS or any mqtt platform to establish MQTT publishing and subscribing functionalities. Upon publishing a message to turn on the 3 LED, ensure that subscribers receive the message and activate the particular led at a certain time LED accordingly.
-Ex.LED 1 ON - Should on the first led only
-SIMILARLY FOR LED 2 AND FOR 3
- 
-LED 1 OFF - Should off the first led only
-SIMILARLY FOR LED 2 AND FOR 3
- 
-specifications- the resource is for one led on and off I gave it for 3 leds
+```
+LED 1 ON  → Turns on the first LED  
+LED 1 OFF → Turns off the first LED  
+```
 
+Similarly, control **LED 2** and **LED 3**.
 
-Takeaways : Learn about the different protocols used in IOT.
-Resource Links* - 
+**Resources:**
 
-https://m.youtube.com/watch?v=deIRY5NxXo4
+* [MQTT X Features](https://mqttx.app/features)
+* [ESP8266 MQTT LED Control](https://www.emqx.com/en/blog/esp8266_mqtt_led)
 
+**Takeaway:**
+Understand MQTT communication and apply it to control hardware remotely.
 
+---
 
+## **Task 4 – Communication using I2C Protocol**
 
+**Objective:**
+* Both ESP32 boards should host web servers for bidirectional communication.
+* The typed message on one webserver should be displayed on the LCD connected to the other ESP32.
 
-Expected task outcomes*- Upon successfully implementing MQTT publishing and subscribing using MQTT-LENS or any MQTT PUBLISHER, the LED will turn on and off when a particular message is published, demonstrating seamless communication and control over the LED device Using MQTT.
+**Description:**
+Send data between two ESP32 boards using the I2C protocol.
+Display a message on an LCD screen by typing the message using a webserver hosted on the ESP32.
 
-Precautions/Safety measures/process for completing task- NILL
+**Takeaway:**
+Learn wired communication between two microcontrollers using the I2C protocol.
 
+**Resource:** [ESP32 I2C Master and Slave](https://randomnerdtutorials.com/esp32-i2c-master-slave-arduino/)
 
+---
 
-##  Task 6 - Sending data to ThingSpeak
-Using Esp32 post the data of a temperature sensor to the Thingspeak Website using its api and display the graph of temp vs time and after processing retrieve the data back from the website.
+# **Cloud Communication & Data Logging**
 
-Alternatively you can also use matplotlib in python to plot the graph of temp vs time, by downloading the dataset from thingspeak.
+---
 
-[Resource1](https://randomnerdtutorials.com/esp32-http-post-ifttt-thingspeak-arduino/)
+## **Task 5 – Sending Data to ThingSpeak and Creating a Regression Model**
 
-[Resource 2](https://nothans.com/thingspeak-tutorials/arduino/send-data-to-thingspeak-with-arduino)
+**Objective:**
 
-Takeaways : Learn how to publish data to website and get data from it
+* Publish temperature data from ESP32 to ThingSpeak.
+* Retrieve the dataset from ThingSpeak for analysis.
+* Using Matplotlib in Python, plot the graph of **Temperature vs. Time**.
+* Create a regression model to analyze the relationship between **Humidity (from a DHT11 sensor)** and **Moisture Percentage (from a capacitive soil moisture sensor)**.
 
+**Description:**
+Using an ESP32, post temperature data from a sensor and soil moisture data to the ThingSpeak website using its API and display graphs:
 
+* **Temperature vs. Soil Moisture**
+* **Humidity vs. Soil Moisture**
 
-##   Task 7 - Communication using I2C protocol
+Retrieve the data back from ThingSpeak and create a regression model.
 
-Send data from Esp32 to Arduino via I2C protocol and display a message on the lcd screen by typing the message using the webserver hosted on the esp32.
+**Plot the Regression Graph:**
 
-What is [I2C protocol](https://www.tutorialspoint.com/what-is-the-i2c-protocol-in-computer-network#:~:text=I2C%20stands%20for%20the%20inter,device%20has%20a%20specific%20address.)?
+* **X-axis:** Humidity
+* **Y-axis:** Moisture Percentage
 
-[Resource](https://forum.arduino.cc/t/i2c-from-esp32-to-arduino/975652)
+**Resources:**
 
-Takeaways : Learn the wired communication protocol between two microcontrollers.
+* [Basics of Linear and Logistic Regression](https://hub.uvcemarvel.in/course/AI-ML-001#2)
+* [Soil Moisture Monitoring with Arduino and Machine Learning](https://github.com/sohamroy3/Soil-moisture-Monitoring-using-arduino-with-machine-learning)
+* [ESP32 HTTP POST with IFTTT and ThingSpeak](https://randomnerdtutorials.com/esp32-http-post-ifttt-thingspeak-arduino/)
+* [Send Data to ThingSpeak with Arduino](https://nothans.com/thingspeak-tutorials/arduino/send-data-to-thingspeak-with-arduino)
 
+**Takeaway:**
+Learn to publish and retrieve data from a web server, analyze data, and apply machine learning for prediction.
 
+---
 
-## Task 8 - Flashing Morse Code 
+# **Web Servers & Local Interfaces**
 
-Set up an ESP32 to flash morse code using an led making use of the message sent by the webserver hosted on the esp32.
+---
 
-[Resource](https://www.deviceplus.com/arduino/how-to-create-a-morse-code-generator-using-arduino/).
+## **Task 6 – Flashing Morse Code**
 
-Takeaways : One of the real life application of a webserver for communication.
+**Objective:**
+Create a website that converts typed input (normal words) to Morse code.
+The LED should blink according to the Morse code generated.
 
+**Description:**
+Set up an ESP32 to flash Morse code using an LED. The message is sent through a webserver hosted on the ESP32.
 
-## Task 9 - Soil Moisture Sensor
+**Resource:** [Morse Code with Arduino](https://www.instructables.com/Morse-code-with-arduinoLED/)
 
-Measure the moisture level of the soil in the pot using the capacitive soil moisture sensor and display the moisture level on the serial monitor or on the LCD screen. Give an alert to the user if the soil moisutre level is below a certain level. 
+**Takeaway:**
+Understand the application of webservers in communication.
 
-[Resource](https://esp32io.com/tutorials/esp32-soil-moisture-sensor).
+---
 
-Takeaways : Learn to measure soil moisture and control the water level.
+## **Task 7 – Health Vitals Dashboard**
 
+**Objective:**
+Plot graphs of the vitals on a webserver for real-time monitoring.
 
-## Task 10 - Read and Display Vitals
+**Description:**
+Measure heart rate and blood oxygen levels using the pulse sensor and display the results graphically on a webserver.
 
-Measure heart rate and blood oxygen levels using MAX30100 sensor and display the results on an Android Application using MIT App Inventor. Give a notification to the user if the heart rate or the oxygen level is out of the normal range. The app can communicate with the ESP32 using a webserver or using MQTT protocol. 
+**Resources:**
 
-Resources:
+* [Pulse sensor Esp32](https://microcontrollerslab.com/pulse-sensor-esp32-tutorial/)
+* [Plot Chart on Web Server](https://randomnerdtutorials.com/esp32-esp8266-plot-chart-web-server/)
 
-1. [MAX30100 with OLED](https://www.instructables.com/Heart-Rate-and-Blood-Oxygen-Level-With-Arduino-IDE/)
-2. [MIT App Inventor using WebServer](https://community.appinventor.mit.edu/t/esp32-sends-data-to-the-app-over-wifi-in-realtime-javascript-ajax/46307)
-3. [MQTT using MIT App Inventor and ESP32](https://www.youtube.com/watch?v=WAimZhU5phs)
+**Takeaway:**
+Learn to monitor health vitals and display data graphically on a webserver.
 
-## Task 11 - FIRE ALARM SYSTEM WITH EMAIL ALERTS
-Develop a fire alarm system using ESP32 microcontroller equipped with fire sensors. Upon detecting fire, the ESP32 triggers an email alert through Wi-Fi, notifying designated recipients about the potential fire hazard for timely response and action.
-*IMPORTANT* -This task needs to be tested only in the presence of a coordinator outside the lab (in an open area) to ensure the safety of the lab.
+---
 
- RESOURCE : https://randomnerdtutorials.com/esp32-email-alert-temperature-threshold/
- 
-TASK OUTCOME: sending emails using esp32- the resource provides guidance on sending emails using esp32. Changes have to be done to the hardware connections and the code so as to include the fire sensor.
- 
-PRECAUTIONS/SAFETY MEASURES- to ensure that the testing of this circuit is done only in the presence of a coordinator outside the lab (in an open area ) to ensure the safety of the lab.
+# **Actuation, Surveillance & Alerts**
+
+---
+
+## **Task 8 – Wi-Fi Controlled Surveillance Bot with Live Video Stream**
+
+**Objective:**
+Create a surveillance bot capable of capturing live video feed and remotely controlling its movements.
+
+**Description:**
+Build a surveillance robot using an ESP32-CAM and L298N motor driver. Implement live video streaming and enable remote control functionality over Wi-Fi.
+
+**Specific Requirements:**
+
+* Use **L298N Motor Driver** for movement control.
+* Set up **live video streaming server**.
+* Upload the captured video to the **MARVEL website**.
+
+**Resource:** [ESP32-CAM Surveillance Robot](https://iotdesignpro.com/projects/esp32-cam-surveillance-robot-car)
+
+**Takeaway:**
+Learn video streaming, remote control, and motor driver interfacing with ESP32.
+
+---
+
+## **Task 9 – Fire Alarm System with SMS Alerts**
+
+**Objective:**
+Learn about fire detection and integrating SMS alert systems using APIs.
+
+**Description:**
+Develop a fire alarm system using the ESP32 microcontroller with fire sensors.
+On detecting heat, the ESP32 triggers an SMS alert using the **Twilio API** or any other platform.
+
+> ⚠️ **Important:** This task must be tested under supervision due to safety precautions.
+
+**Resources:**
+
+* [ESP32 Flame Sensor](https://esp32io.com/tutorials/esp32-flame-sensor)
+* [Sending SMS Alerts with ESP32](https://iotdesignpro.com/articles/sending-sms-alerts-with-esp32-using-twilio)
+
+**Takeaway:**
+Learn about fire detection and integrating SMS alert systems using APIs.
+
+
 
 
 
