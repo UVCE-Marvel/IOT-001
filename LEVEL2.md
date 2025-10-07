@@ -1,8 +1,7 @@
----
+
 
 # **Level 2 – Smart Living & Environmental Automation**
 
----
 
 ## **Task 1 – Smart Irrigation System**
 
@@ -24,6 +23,7 @@ The system should use a relay to control the valve.
 **Takeaway:**
 Learn automated irrigation using relays and solenoid valves with ESP32.
 
+
 ## **Task 2 – Smart Parking System**
 
 **Objective:**
@@ -43,7 +43,7 @@ Develop a smart parking system using an ESP32 and an ultrasonic sensor, integrat
 **Takeaway:**
 Learn real-time monitoring and IoT integration using the Blynk platform.
 
----
+
 
 ## **Task 3 – Smart Street Lighting with Node-RED Dashboard**
 
@@ -75,11 +75,10 @@ Develop an automated street lighting system that uses:
 Learn how to integrate sensor fusion (LDR + PIR), automate actuation (Relay), and visualize smart infrastructure status using a live Node-RED dashboard.
 This task enhances understanding of real-time control systems and IoT-based urban infrastructure.
 
----
+
 
 # **Identification & Cloud Logging**
 
----
 
 ## **Task 4 – Intro to RFID and Attendance Logger**
 
@@ -95,7 +94,7 @@ Understand RFID technology and learn to log data on cloud platforms.
 **Resource:**
  [ESP32 with RFID Access Control](https://www.instructables.com/ESP32-With-RFID-Access-Control/)
 
----
+
 
 ### **Part ii – Attendance Logger**
 
@@ -108,11 +107,11 @@ Understand RFID technology and learn to log data on cloud platforms.
 **Takeaway:**
 Understand RFID technology and learn to log data on cloud platforms.
 
----
+
 
 # **Security & Computer Vision**
 
----
+
 
 ## **Task 5 – House Security System**
 
@@ -139,7 +138,7 @@ Develop a house security system using:
 **Takeaway:**
 Learn home security automation with image capturing and IoT alert systems.
 
----
+
 
 ## **Task 6 – Red Light Green Light Game (Squid Game)**
 
@@ -162,11 +161,11 @@ Create a **“Red Light Green Light”** game inspired by *Squid Game* using ESP
 **Takeaway:**
 Learn computer vision, image recognition, and sound integration with ESP32.
 
----
+
 
 # **AI & Voice-Controlled Automation**
 
----
+
 
 ## **Task 7 – Creating Your Own Home Assistant**
 
@@ -189,4 +188,4 @@ Build a smart home system using an ESP32 and a microphone sensor, integrated wit
 **Takeaway:**
 Learn voice recognition, IoT automation, and AI integration.
 
----
+
