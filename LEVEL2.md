@@ -24,9 +24,6 @@ The system should use a relay to control the valve.
 **Takeaway:**
 Learn automated irrigation using relays and solenoid valves with ESP32.
 
-
----
-
 ## **Task 2 – Smart Parking System**
 
 **Objective:**
